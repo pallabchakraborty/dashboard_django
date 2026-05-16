@@ -19,7 +19,7 @@ SECRET_KEY = 'django-insecure-1jj5cx-!4m%k%^wh86*!a)m@w%go_6_g2t^(^r#j31nwzkkdz8
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    'dashboard-django-x243.onrender.com', 
+    'https://dashboard-django-x243.onrender.com', 
     'localhost', 
     '127.0.0.1'
     ]

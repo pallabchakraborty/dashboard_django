@@ -30,7 +30,11 @@ SECRET_KEY = env('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env('DEBUG')
 
-ALLOWED_HOSTS = ['https://dashboard-django-x243.onrender.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = [
+    'dashboard-django-x243.onrender.com', 
+    'localhost', 
+    '127.0.0.1'
+    ]
 
 
 # Application definition
@@ -94,10 +98,10 @@ DATABASES = {
 
 DATABASES['default'] = dj_database_url.parse(env('DATABASE_URL'))
 
-CORS_ALLOWED_ORIGINS = ["https://dashboard-react-rosy-one.vercel.app", "http://localhost:5173"]
-
-# print(env("CORS_ALLOWED_ORIGINS"))
-# print(env.list("CORS_ALLOWED_ORIGINS"))
+CORS_ALLOWED_ORIGINS = [
+    "https://dashboard-react-rosy-one.vercel.app", 
+    "http://localhost:5173"
+    ]
 
 # Password validation
 # https://docs.djangoproject.com/en/6.0/ref/settings/#auth-password-validators

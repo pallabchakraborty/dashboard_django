@@ -21,7 +21,7 @@ DEBUG = False
 ALLOWED_HOSTS = [
     'dashboard-django-x243.onrender.com', 
     'localhost', 
-    '127.0.0.1'
+    '127.0.0.1',
     ]
 
 # Application definition
@@ -94,8 +94,21 @@ STORAGES = {
 
 CORS_ALLOWED_ORIGINS = [
     "https://dashboard-react-rosy-one.vercel.app", 
-    "http://localhost:5173"
+    "http://localhost:5173",
     ]
+
+CORS_ALLOW_HEADERS = (
+    "accept",
+    "authorization",
+    "content-type",
+    "user-agent",
+    "x-csrftoken",
+    "x-requested-with",
+)
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://dashboard-react-rosy-one.vercel.app",
+]
 
 # Password validation
 # https://docs.djangoproject.com/en/6.0/ref/settings/#auth-password-validators

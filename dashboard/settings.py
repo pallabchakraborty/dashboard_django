@@ -84,10 +84,16 @@ DATABASES = {
     }
 }
 
-DATABASES['default'] = dj_database_url.parse(env('DATABASE_URL'))
+DATABASES['default'] = dj_database_url.parse("postgresql://dashboard_postgres_wsif_user:mWy721utc7lh5WmFOUBGOX15sEBONeIh@dpg-d83ps59kh4rs73cims7g-a.singapore-postgres.render.com/dashboard_postgres_wsif")
+
+STORAGES = {
+    "staticfiles": {
+        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
+    },
+}
 
 CORS_ALLOWED_ORIGINS = [
-    "https://dashboard-react-rosy-one.vercel.app", 
+    "dashboard-react-rosy-one.vercel.app", 
     "http://localhost:5173"
     ]
 

@@ -13,10 +13,10 @@ env=environ.Env()
 env.read_env(BASE_DIR / 'dashboard' / '.env')
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = env('SECRET_KEY')
+SECRET_KEY = 'django-insecure-1jj5cx-!4m%k%^wh86*!a)m@w%go_6_g2t^(^r#j31nwzkkdz8'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = env('DEBUG')
+DEBUG = False
 
 ALLOWED_HOSTS = [
     'dashboard-django-x243.onrender.com', 
@@ -93,7 +93,7 @@ STORAGES = {
 }
 
 CORS_ALLOWED_ORIGINS = [
-    "dashboard-react-rosy-one.vercel.app", 
+    "https://dashboard-react-rosy-one.vercel.app", 
     "http://localhost:5173"
     ]
 
